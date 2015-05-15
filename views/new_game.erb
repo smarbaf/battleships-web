@@ -1,0 +1,14 @@
+Thanks for playing Battleships Web!
+
+<% if @name == "" %>
+  <p>C'mon! No name? You know you want to play...</p>
+<% else %>
+  What's your name?
+<% end %>
+
+<form action="/game/start" method="post">
+  <input type="text" name="name">
+  <input type="submit" value="Submit">
+</form>
+
+
